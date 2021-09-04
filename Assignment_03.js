@@ -50,7 +50,7 @@ function getResult(i) { //function การบันทึกคะแนนใ
 
 function play() {// function เพื่อเริ่มเล่นเกม
     for (let i = 0; i < round; i++) {  //ทำการวนเรียก function getresult ตามรอบที่กำหนดเพื่อหาผลคะแนน และนับว่าใครชนะมากที่สุด
-        getResult(i);
+        getResult(i); //ทำการเรียก function gerResult() โดยรับ i เป็น parameter เพื่อกำหนดว่ารอบที่เท่าไหร่แล้ว
     }
     if (player1.resultPoint > player2.resultPoint) { //ทำการเทียบคะแนนรวมว่า player1 มีคะแนนรวมมากกว่า player2 หรือไม่
         console.log("All Result " + player1.name + " is Winner");
